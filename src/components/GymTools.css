@@ -1,0 +1,55 @@
+.equipment-card:focus-visible,
+.guide-close:focus-visible,
+.guide-content .button:focus-visible {
+  outline: 3px solid var(--lime);
+  outline-offset: 3px;
+}
+
+.equipment-card-body h3 {
+  overflow-wrap: anywhere;
+}
+.equipment-section { padding-bottom: 135px; }
+.equipment-section .section-heading > p { color: var(--muted); font-size: 12px; margin: 0 0 4px; }
+.section-heading { align-items: end; display: flex; justify-content: space-between; margin-bottom: 35px; }
+.section-heading h2 { margin-top: 22px; }
+.equipment-grid { display: grid; gap: 18px; grid-template-columns: repeat(4, 1fr); }
+.equipment-card { background: #fffdf9; border: 1px solid var(--line); color: var(--ink); cursor: pointer; font: inherit; padding: 0; text-align: left; transition: transform .2s, box-shadow .2s; }
+.equipment-card:hover { box-shadow: 0 14px 28px rgba(0,0,0,.35); transform: translateY(-5px); }
+.equipment-image { height: 205px; overflow: hidden; position: relative; }
+.equipment-image::after { background: linear-gradient(0deg, rgba(15,17,14,.7), transparent 50%); content: ''; inset: 0; position: absolute; }
+.equipment-image img { height: 100%; object-fit: cover; transition: transform .4s; width: 100%; }
+.equipment-card:hover .equipment-image img { transform: scale(1.06); }
+.equipment-image .card-number { background: var(--lime); font-family: Oswald, sans-serif; font-size: 18px; left: 17px; padding: 8px 10px; position: absolute; top: 17px; z-index: 1; }
+.view-guide { align-items: center; bottom: 14px; color: white; display: flex; font-size: 10px; font-weight: 700; gap: 7px; left: 17px; opacity: 0; position: absolute; transform: translateY(5px); transition: opacity .2s, transform .2s; z-index: 1; }
+.equipment-card:hover .view-guide, .equipment-card:focus-visible .view-guide { opacity: 1; transform: translateY(0); }
+.equipment-card-body { align-items: center; display: flex; justify-content: space-between; min-height: 88px; padding: 17px 18px; }
+.equipment-card-body span { color: #b27a0c; font-size: 9px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+.equipment-card-body h3 { font-family: Oswald, sans-serif; font-size: 21px; font-weight: 500; margin: 7px 0 0; overflow-wrap: anywhere; }
+.equipment-card-body > svg { color: #92958c; }
+.equipment-card:focus-visible, .guide-close:focus-visible, .guide-content .button:focus-visible { outline: 3px solid var(--lime); outline-offset: 3px; }
+.guide-backdrop { align-items: center; background: rgba(27,27,27,.78); display: flex; inset: 0; justify-content: center; padding: 24px; position: fixed; z-index: 10; }
+.guide-modal { background: var(--cream); display: grid; grid-template-columns: .9fr 1.1fr; max-height: min(690px, 90vh); max-width: 850px; overflow: auto; position: relative; width: 100%; }
+.guide-close { align-items: center; background: var(--lime); border: 0; cursor: pointer; display: flex; height: 38px; justify-content: center; position: absolute; right: 0; top: 0; width: 38px; z-index: 2; }
+.guide-photo { min-height: 420px; }
+.guide-photo img { height: 100%; object-fit: cover; width: 100%; }
+.guide-content { align-self: center; padding: 50px 46px; }
+.guide-content h2 { font-size: clamp(42px, 5vw, 62px); margin: 20px 0 8px; }
+.guide-focus { color: var(--lime); font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+.guide-content > p { color: var(--muted); font-size: 14px; line-height: 1.75; margin: 27px 0; }
+.guide-checks { border-top: 1px solid var(--line); display: grid; gap: 13px; padding: 19px 0 25px; }
+.guide-checks span { align-items: center; display: flex; font-size: 11px; font-weight: 600; gap: 9px; }
+.guide-checks svg { color: var(--lime); }
+@media (max-width: 800px) {
+  .equipment-section { padding-bottom: 85px; }
+  .equipment-grid { grid-template-columns: repeat(2, 1fr); }
+  .section-heading { align-items: start; display: block; }
+  .guide-modal { display: block; max-height: 90vh; }
+  .guide-photo { height: 260px; min-height: 0; }
+  .guide-content { padding: 32px 25px 28px; }
+}
+@media (max-width: 480px) {
+  .equipment-grid { grid-template-columns: 1fr; }
+  .equipment-image { height: 235px; }
+  .view-guide { opacity: 1; transform: none; }
+  .guide-photo { height: 220px; }
+}

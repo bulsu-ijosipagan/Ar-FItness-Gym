@@ -1,0 +1,21 @@
+.rates { align-items: end; border-bottom: 1px solid var(--line); display: grid; gap: 70px; grid-template-columns: .8fr 1.2fr; padding-bottom: 125px; }
+.rates-heading h2 { margin: 24px 0 0; }
+.rates-content { max-width: 650px; }
+.rates-content > p { color: var(--muted); font-size: 14px; line-height: 1.75; margin-bottom: 28px; max-width: 470px; }
+.rate-cards { display: grid; gap: 12px; grid-template-columns: repeat(3, 1fr); }
+.rate-card { background: #fffdf9; border: 1px solid var(--line); display: flex; flex-direction: column; min-height: 175px; padding: 19px 18px 16px; }
+.rate-card svg { color: #b27a0c; margin-bottom: 18px; }
+.rate-card span { color: var(--muted); font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+.rate-card strong { font-family: Oswald, sans-serif; font-size: 42px; font-weight: 500; line-height: 1; margin-top: auto; }
+.rate-card small { color: var(--muted); font-size: 10px; margin-top: 7px; text-transform: uppercase; }
+.rate-card-featured { background: var(--ink); border-color: var(--ink); color: white; transform: translateY(-12px); }
+.rate-card-featured svg, .rate-card-featured span, .rate-card-featured small { color: var(--lime); }
+.rates-content .text-link { margin-top: 25px; }
+@media (max-width: 800px) {
+  .rates { align-items: start; display: block; padding-bottom: 85px; }
+  .rates-content { margin-top: 35px; }
+}
+@media (max-width: 480px) {
+  .rate-cards { grid-template-columns: 1fr; }
+  .rate-card-featured { transform: none; }
+}

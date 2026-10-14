@@ -1,0 +1,12 @@
+.footer { background: #ebe4d9; border-top: 1px solid var(--line); }
+.footer-inner { align-items: center; display: flex; gap: 32px; min-height: 100px; }
+.footer-inner p { color: var(--muted); font-size: 11px; margin: 0 auto 0 0; }
+.footer-facebook { align-items: center; display: flex; font-size: 11px; font-weight: 700; gap: 7px; }
+.footer-note { color: #8b8479; font-size: 10px; }
+@media (max-width: 800px) {
+  .footer-inner { flex-wrap: wrap; gap: 17px; padding: 25px 0; }
+  .footer-inner p { margin-right: 0; width: 100%; }
+}
+@media (max-width: 480px) {
+  .footer-note { margin-left: auto; }
+}
