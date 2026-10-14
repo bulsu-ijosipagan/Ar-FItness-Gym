@@ -9,6 +9,6 @@ export function Hero({ featuredEquipment }) {
       <a className="button button-primary" href="#equipment">See the equipment <ArrowRight size={18} /></a>
       <div className="hero-proof"><strong>15</strong><span>pieces of equipment<br />ready for your next session</span></div>
     </div>
-    <div className="hero-visual"><div className="hero-image"><img className="hero-image-backdrop" src={featuredEquipment.image} alt="" aria-hidden="true" /><img className="hero-image-main" src={featuredEquipment.image} alt={featuredEquipment.name} /></div><div className="hero-stamp"><Dumbbell size={17} /><span>Find your<br /><b>strong</b></span></div><div className="hero-stat"><strong>AR</strong><span>Fitness<br />Gym</span></div></div>
+    <div className="hero-visual"><div className="hero-image"><img className="hero-image-backdrop" src={featuredEquipment.image} alt="" aria-hidden="true" /><img className="hero-image-main" src={featuredEquipment.image} alt={featuredEquipment.name} /></div><div className="hero-stamp"><Dumbbell size={17} /><span>Find your<br /><b>strong</b></span></div><div className="hero-stat"><span className="hero-stat-mark">AR</span><span className="hero-stat-copy"><strong>FITNESS</strong><small>GYM</small></span></div></div>
   </section>;
 }

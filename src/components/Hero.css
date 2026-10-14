@@ -18,9 +18,11 @@ h1 { color: var(--ink); font-size: clamp(67px, 8vw, 113px); margin: 25px 0 29px;
 .hero-image-main { object-fit: contain; object-position: center; position: relative; z-index: 1; }
 .hero-stamp { align-items: center; background: var(--lime); bottom: -26px; display: flex; flex-direction: column; font-family: Oswald, sans-serif; font-size: 13px; gap: 7px; height: 118px; justify-content: center; position: absolute; right: -24px; text-align: center; transform: rotate(8deg); width: 118px; z-index: 2; }
 .hero-stamp b { color: #6f8e13; font-weight: 500; }
-.hero-stat { align-items: center; background: var(--ink); bottom: 25px; color: white; display: flex; gap: 12px; left: -25px; padding: 17px 20px; position: absolute; z-index: 2; }
-.hero-stat strong { color: var(--lime); font-family: Oswald, sans-serif; font-size: 25px; font-weight: 500; }
-.hero-stat span { font-size: 10px; line-height: 1.35; text-transform: uppercase; }
+.hero-stat { align-items: center; background: rgba(21, 22, 19, .96); bottom: 25px; color: white; display: flex; gap: 14px; left: -25px; padding: 22px 25px; position: absolute; z-index: 2; }
+.hero-stat-mark { color: var(--lime); display: block; font-family: Oswald, sans-serif; font-size: 32px; font-weight: 500; letter-spacing: -1px; line-height: .9; }
+.hero-stat-copy { display: flex; flex-direction: column; font-family: Oswald, sans-serif; line-height: .9; letter-spacing: 1.2px; }
+.hero-stat-copy strong { color: #fff; font-size: 15px; }
+.hero-stat-copy small { color: #fff; font-size: 10px; letter-spacing: 3px; padding-left: 2px; }
 @media (max-width: 800px) {
   .hero { display: block; padding: 57px 0 90px; width: min(100% - 40px, 560px); }
   .hero-copy { margin-bottom: 60px; }
